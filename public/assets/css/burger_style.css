@@ -11,3 +11,8 @@ img {
   width: 250px;
   align-self: center;
 }
+
+li {
+  list-style: none;
+  padding: 20px;
+}

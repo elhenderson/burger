@@ -9,12 +9,12 @@ var connection = mysql.createConnection({
   })
   
 connection.connect((err) => {
-if (err) {
-    console.log(`Could not connect: ${err.stack}`)
-    return
-}
+  if (err) {
+      console.log(`Could not connect: ${err.stack}`)
+      return
+  }
 
-console.log(`Connected as id ${connection.threadId}`)
+  console.log(`Connected as id ${connection.threadId}`)
 })
 
 module.exports = connection;
